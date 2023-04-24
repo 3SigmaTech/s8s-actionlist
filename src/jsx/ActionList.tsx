@@ -8,9 +8,11 @@ import {
     ActionListSettings, ActionListProps, ActionListData
 } from '../js/ActionListContext.js';
 
-export * from '../js/ActionListContext.js';
+import * as helpers from './ActionListHelpers.jsx';
 
-import * as helpers from './ActionListHelpers';
+// Moving these to index.ts caused intellisense issues in other project
+// TODO: sort out why
+export * from '../js/ActionListContext.js';
 export * as helpers from './ActionListHelpers';
 
 import { ActionListTable } from './Table/ActionListTable.jsx';
