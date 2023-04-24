@@ -1,0 +1,13 @@
+.github/
+.vscode/
+src/
+vendor/
+build/
+man/
+test/
+tests/
+gulpfile.*
+rollup.*
+tsconfig.json
+*lint.*
+bin/

@@ -1,0 +1,58 @@
+{
+    "name": "s8s-actionlist",
+    "version": "0.1.0",
+    "description": "List Component that renders a table, board, grid, or calendar",
+    "engines": {
+        "node": "18.x",
+        "npm": "9.x"
+    },
+    "main": "dist/index.js",
+    "type": "module",
+    "types": "dist/jsx/ActionList.d.ts",
+    "scripts": {
+        "types": "cp -rf ./src/types ./dist/types",
+        "prebuild": "npx gulp clean",
+        "build": "npx gulp build && npm run types",
+        "test": "echo 'There are no tests at this time'",
+        "deploy": "npm run build && npm run test",
+        "devpack": "sh ./bin/devpack.sh",
+        "release": "npx gulp release"
+    },
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "localDependencies": {
+        "s8s-build": "^0.1.2",
+        "s8s-build-": "file:~/Repos/s8s-build-0.1.2.tgz"
+    },
+    "devDependencies": {
+        "@fullcalendar/core": "^6.1.5",
+        "@fullcalendar/daygrid": "^6.1.5",
+        "@fullcalendar/interaction": "^6.1.5",
+        "@fullcalendar/multimonth": "^6.1.5",
+        "@fullcalendar/react": "^6.1.5",
+        "@fullcalendar/timegrid": "^6.1.5",
+        
+        "react-dnd": "^16.0.1",
+        "react-dnd-html5-backend": "^16.0.1",
+        "react-dnd-touch-backend": "^16.0.1",
+
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "s8s-build": "^0.1.2",
+        "tslib": "^2.5.0",
+        "typescript": "^4.9.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/3SigmaTech/s8s-actionlist.git"
+    },
+    "keywords": [
+        "react",
+        "calendar",
+        "s8s",
+        "section-8-secrets"
+    ],
+    "license": "MIT"
+}

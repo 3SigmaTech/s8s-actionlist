@@ -1,0 +1,92 @@
+.action-list-table {
+    width: 100%;
+}
+
+.action-list-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.action-list-table thead tr {
+    background-color: lightgray;
+    color: white;
+    text-align: left;
+}
+
+.action-list-table th,
+.action-list-table td {
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    vertical-align: middle;
+    padding: 12px 15px;
+}
+
+.action-list-table th::after {
+    margin-left: 1em;
+}
+
+.action-list-table th.unsorted::after {
+    content: "\2195";
+}
+
+.action-list-table th.up::after {
+    content: "\2191";
+}
+
+.action-list-table th.down::after {
+    content: "\2193";
+}
+
+.action-list-table tbody tr {
+    border-bottom: 1px solid lightgray;
+}
+
+.action-list-table tbody tr:nth-of-type(even) {
+    background-color: white;
+}
+
+.action-list-table tbody tr:last-of-type {
+    border-bottom: 2px solid lightgray;
+}
+
+.action-list-table tbody tr:hover {
+    text-shadow: 0px 0px 0.75px;
+}
+
+td>p {
+    vertical-align: middle;
+    padding: 10px;
+    margin: 0;
+}
+
+.action-list-cell a {
+    &:link {
+        color: inherit;
+    }
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+.action-list-cell {
+    white-space: pre-wrap;
+}
+
+.action-list-cell p.pill {
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    line-height: 1;
+}
+
+.action-list-cell p.ring {
+    display: inline-block;
+    width: 0;
+    margin: 0;
+    font-size: 1.2em;
+}

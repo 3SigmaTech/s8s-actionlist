@@ -1,0 +1,75 @@
+.action-list-ring {
+    float: left;
+    cursor: pointer;
+}
+
+.action-list-ring circle {
+    stroke: lightgray;
+    stroke-width: 7px;
+    cursor: pointer;
+}
+
+.action-list-ring .indicator {
+    stroke: gray;
+}
+
+.action-list-bar {
+    width: 40px;
+    margin: 3px 5px 3px 0;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+
+    --progress: 0%;
+    border-color: gray;
+    background: linear-gradient(90deg, gray var(--progress), white var(--progress));
+}
+
+.action-list-due-soon {
+    color: red;
+}
+
+
+
+
+
+.action-list-layout-type {
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid gray;
+    background: lightgray;
+    cursor: pointer;
+    padding: 10px 30px 10px 30px;
+}
+
+.action-list-layout-type:hover {
+    text-shadow: 0px 0px 0.75px;
+}
+
+.action-list-layouts {
+    margin-bottom: 20px;
+    min-width: 430px;
+    user-select: none;
+}
+
+.action-list-layout-type:first-of-type {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.action-list-layout-type:last-of-type {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.action-list-active-layout {
+    box-shadow: inset 0 0 10px -1px rgba(0, 0, 0, 0.2);
+}
+
+.action-list-container {
+    min-width: 500px;
+    user-select: none;
+    overflow: scroll;
+}

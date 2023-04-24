@@ -1,0 +1,56 @@
+.fc {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.fc-daygrid-week-number {
+    font-size: 0.75em;
+}
+
+.action-list-event-container {
+    width: 100%;
+    height: 100%;
+}
+
+.action-list-event {
+    padding: 0;
+    color: black;
+
+    &.action-list-due-soon {
+        color: red;
+    }
+}
+
+.action-list-event-ring {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    border-radius: 0;
+    border-width: 0.5;
+
+    &:first-of-type {
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+.action-list-event-contents {
+    white-space: pre-wrap;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+
+.action-list-event-title {
+    margin-bottom: 0.5em;
+}
+
+.action-list-event-related {
+    margin: 0;
+    text-align: right;
+}
